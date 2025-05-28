@@ -1,0 +1,29 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+sqlalchemy==2.0.25
+pydantic==2.6.4
+pydantic-settings==2.2.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.9
+pandas==2.2.2
+matplotlib==3.8.4
+aiofiles==23.2.1
+httpx==0.27.0
+
+# Google Vertex AI SDK（如需集成 Gemini 等模型）
+google-cloud-aiplatform==1.50.0
+google-generativeai>=0.3.2
+google-cloud-storage
+google-adk
+
+# 测试框架
+pytest==7.4.3
+pytest-mock==3.14.0
+pytest-asyncio==0.21.0
+
+bcrypt<4.0
+passlib[bcrypt]
+
+python-docx>=0.8.11
+reportlab>=3.6.12

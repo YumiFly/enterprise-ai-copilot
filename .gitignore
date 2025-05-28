@@ -1,0 +1,37 @@
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略虚拟环境
+venv/
+.env
+
+# 忽略数据文件
+*.csv
+*.xlsx
+*.pdf
+*.docx
+
+# 忽略静态生成报告与图表
+static/reports/
+static/charts/
+
+# 忽略 Google 认证文件（非常重要）
+backend/*.json
+backend/app/static/reports/*
+backend/app/static/charts/*
+backend/*.pdf
+backend/*.docx
+backend/*.png
+backend/static/reports/*png
+backend/static/charts/*.png
+
+# 忽略 IDE 配置
+.idea/
+.vscode/
+
+.env
+
+frontend/opspilot-dashboard/node_modules/*
+frontend/opspilot-dashboard/.next/*
+frontend/opspilot-dashboard/package-lock.json

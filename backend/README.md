@@ -44,36 +44,44 @@
 ---
 
 ### 📦 Tech Stack
-	- **Backend**: FastAPI + async + PostgreSQL (via SQLAlchemy)
-	- **Agents**: Python modules implementing run() logic
-	- **LLM**: Google Gemini Pro / Vertex AI
-	- **Storage**: Google Cloud Storage (GCS)
-	- **Deployment**: Docker + Cloud Run
+	Backend: FastAPI + async + PostgreSQL (via SQLAlchemy)
+	Agents: Python modules implementing run() logic
+	LLM: Google Gemini Pro / Vertex AI
+	Storage: Google Cloud Storage (GCS)
+	Deployment: Docker + Cloud Run
 
 ---
 
 ### 🛠️ Getting Started
 
 1. Clone the repo
-
-git clone https://github.com/yourname/enterprise-ai-copilot.git
-cd enterprise-ai-copilot
+```
+	git clone https://github.com/yourname/enterprise-ai-copilot.git
+	cd enterprise-ai-copilot
+```
 
 2. Setup environment
 
+```
 Create a .env file:
-
-GEMINI_API_KEY=your-key-here
-GCS_BUCKET_NAME=your-gcs-bucket
-GOOGLE_APPLICATION_CREDENTIALS=/app/your-service-account.json
+	GEMINI_API_KEY=your-key-here
+	GCS_BUCKET_NAME=your-gcs-bucket
+	GOOGLE_APPLICATION_CREDENTIALS=/app/your-service-account.json
+```
 
 3. Install dependencies
 
-pip install -r requirements.txt
+```
+	pip install -r requirements.txt
+```
 
 4. Run locally
 
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+	uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+5. Test the API
 
 Visit http://localhost:8000/docs for Swagger UI.
 
@@ -81,13 +89,16 @@ Visit http://localhost:8000/docs for Swagger UI.
 
 ### 🧪 Run Tests
 
-pytest tests/
+```
+	pytest tests/
+```
 
 
 ---
 
 ### 📁 Directory Structure
 
+```
 app/
   agents/          # Agent implementations
   auth/            # User auth logic
@@ -98,7 +109,7 @@ app/
 static/            # Report/chart output files (if local)
 tests/             # Unit tests
 
-
+```
 ---
 
 ### 📚 Project Story
